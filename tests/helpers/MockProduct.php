@@ -1,5 +1,5 @@
 <?php
-namespace Darryldecode\Tests\helpers;
+namespace GSystems\Tests\helpers;
 
 use Illuminate\Contracts\Database\ModelIdentifier;
 

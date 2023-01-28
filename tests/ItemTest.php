@@ -9,7 +9,7 @@
 use GSystems\Cart\Cart;
 use Mockery as m;
 use GSystems\Cart\CartCondition;
-use Darryldecode\Tests\helpers\MockProduct;
+use GSystems\Tests\helpers\MockProduct;
 
 require_once __DIR__ . '/helpers/SessionMock.php';
 

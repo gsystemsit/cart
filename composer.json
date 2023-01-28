@@ -22,17 +22,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Darryldecode\\": "src/Darryldecode"
+            "GSystems\\": "src/GSystems"
         }
     },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "Darryldecode\\Cart\\CartServiceProvider"
+                "GSystems\\Cart\\CartServiceProvider"
             ],
             "aliases": {
-                "Cart": "Darryldecode\\Cart\\Facades\\CartFacade"
+                "Cart": "GSystems\\Cart\\Facades\\CartFacade"
             }
         }
     }

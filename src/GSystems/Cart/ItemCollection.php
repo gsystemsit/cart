@@ -77,7 +77,7 @@ class ItemCollection extends Collection
         if (is_array($this['conditions'])) {
             return count($this['conditions']) > 0;
         }
-        $conditionInstance = "Darryldecode\\Cart\\CartCondition";
+        $conditionInstance = "GSystems\\Cart\\CartCondition";
         if ($this['conditions'] instanceof $conditionInstance) return true;
 
         return false;

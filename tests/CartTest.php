@@ -9,7 +9,7 @@
 
 use GSystems\Cart\Cart;
 use Mockery as m;
-use Darryldecode\Tests\helpers\MockProduct;
+use GSystems\Tests\helpers\MockProduct;
 
 require_once __DIR__ . '/helpers/SessionMock.php';
 
@@ -510,7 +510,7 @@ class CartTest extends PHPUnit\Framework\TestCase
         $this->assertEquals(1, $this->cart->getContent()->count(), 'Cart should have 1 item on it');
         $this->assertEquals(456, $this->cart->getContent()->first()['id'], 'The first content must have ID of 456');
         $this->assertEquals('Sample Item', $this->cart->getContent()->first()['name'], 'The first content must have name of "Sample Item"');
-        $this->assertInstanceOf('Darryldecode\Tests\helpers\MockProduct', $addedItem->model);
+        $this->assertInstanceOf('GSystems\Tests\helpers\MockProduct', $addedItem->model);
     }
 
     public function test_cart_can_add_items_with_multidimensional_array_with_associated_model()
@@ -546,7 +546,7 @@ class CartTest extends PHPUnit\Framework\TestCase
 
         $content = $this->cart->getContent();
         foreach ($content as $item) {
-            $this->assertInstanceOf('Darryldecode\Tests\helpers\MockProduct', $item->model);
+            $this->assertInstanceOf('GSystems\Tests\helpers\MockProduct', $item->model);
         }
 
         $this->assertFalse($this->cart->isEmpty(), 'Cart should not be empty');
