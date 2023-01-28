@@ -1,4 +1,4 @@
-<?php namespace GSystems\Cart;
+<?php namespace Darryldecode\Cart;
 
 use Illuminate\Support\Collection;
 

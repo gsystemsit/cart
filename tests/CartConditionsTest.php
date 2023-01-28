@@ -6,8 +6,8 @@
  * Time: 9:59 PM
  */
 
-use GSystems\Cart\Cart;
-use GSystems\Cart\CartCondition;
+use Darryldecode\Cart\Cart;
+use Darryldecode\Cart\CartCondition;
 use Mockery as m;
 
 require_once __DIR__.'/helpers/SessionMock.php';
@@ -15,7 +15,7 @@ require_once __DIR__.'/helpers/SessionMock.php';
 class CartConditionTest extends PHPUnit\Framework\TestCase  {
 
     /**
-     * @var GSystems\Cart\Cart
+     * @var Darryldecode\Cart\Cart
      */
     protected $cart;
 

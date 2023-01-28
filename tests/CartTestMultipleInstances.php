@@ -6,7 +6,7 @@
  * Time: 1:45 PM
  */
 
-use GSystems\Cart\Cart;
+use Darryldecode\Cart\Cart;
 use Mockery as m;
 
 require_once __DIR__.'/helpers/SessionMock.php';
@@ -14,12 +14,12 @@ require_once __DIR__.'/helpers/SessionMock.php';
 class CartTestMultipleInstances extends PHPUnit\Framework\TestCase {
 
     /**
-     * @var GSystems\Cart\Cart
+     * @var Darryldecode\Cart\Cart
      */
     protected $cart1;
 
     /**
-     * @var GSystems\Cart\Cart
+     * @var Darryldecode\Cart\Cart
      */
     protected $cart2;
 

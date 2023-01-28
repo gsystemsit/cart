@@ -1,6 +1,6 @@
 <?php
 
-namespace GSystems\Cart\Exceptions;
+namespace Darryldecode\Cart\Exceptions;
 
 class UnknownModelException extends \Exception
 { }

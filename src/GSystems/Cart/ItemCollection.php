@@ -1,4 +1,4 @@
-<?php namespace GSystems\Cart;
+<?php namespace Darryldecode\Cart;
 
 /**
  * Created by PhpStorm.
@@ -7,7 +7,7 @@
  * Time: 11:03 AM
  */
 
-use GSystems\Cart\Helpers\Helpers;
+use Darryldecode\Cart\Helpers\Helpers;
 use Illuminate\Support\Collection;
 
 class ItemCollection extends Collection
@@ -77,7 +77,7 @@ class ItemCollection extends Collection
         if (is_array($this['conditions'])) {
             return count($this['conditions']) > 0;
         }
-        $conditionInstance = "GSystems\\Cart\\CartCondition";
+        $conditionInstance = "Darryldecode\\Cart\\CartCondition";
         if ($this['conditions'] instanceof $conditionInstance) return true;
 
         return false;
