@@ -1,4 +1,4 @@
-<?php namespace Darryldecode\Cart;
+<?php namespace GSystems\Cart;
 
 /**
  * Created by PhpStorm.
@@ -7,7 +7,7 @@
  * Time: 11:03 AM
  */
 
-use Darryldecode\Cart\Helpers\Helpers;
+use GSystems\Cart\Helpers\Helpers;
 use Illuminate\Support\Collection;
 
 class ItemCollection extends Collection

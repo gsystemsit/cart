@@ -1,4 +1,4 @@
-<?php namespace Darryldecode\Cart\Validators;
+<?php namespace GSystems\Cart\Validators;
 
 /**
  * Created by PhpStorm.
