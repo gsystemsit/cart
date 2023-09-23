@@ -87,7 +87,7 @@ class Cart
         $this->sessionKeyCartItems = $this->sessionKey . '_cart_items';
         $this->sessionKeyCartConditions = $this->sessionKey . '_cart_conditions';
         $this->config = $config;
-        $this->currentItem = null;
+        $this->currentItemId = null;
         $this->fireEvent('created');
     }
 
@@ -600,7 +600,7 @@ class Cart
         $conditions->each(function (CartCondition $cond) use ($sum, &$newTotal, &$process) {
 
             // if this is the first iteration, the toBeCalculated
-            // should be the sum as initial pofloat of value.
+            // should be the sum as initial point of value.
             $toBeCalculated = ($process > 0) ? $newTotal : $sum;
 
             $newTotal = $cond->applyCondition($toBeCalculated);
@@ -829,12 +829,12 @@ class Cart
     }
 
     /**
-     * Setter for decimals pofloat. Change value on demand.
-     * @param $dec_pofloat
+     * Setter for decimals point. Change value on demand.
+     * @param $dec_point
      */
-    public function setDecPofloat($dec_pofloat)
+    public function setDecPoint($dec_point)
     {
-        $this->dec_pofloat = $dec_pofloat;
+        $this->dec_point = $dec_point;
     }
 
     public function setThousandsSep($thousands_sep)
